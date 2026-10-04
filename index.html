@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nihshesh &amp; Khyati — Wedding Invitation</title>
+<meta name="description" content="You are invited to our wedding.">
+<meta property="og:title" content="Nihshesh &amp; Khyati — You're invited">
+<meta property="og:description" content="Open the invitation to see our story, photos and details.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Great+Vibes&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="locked">
+
+<!-- Opening animation -->
+<div id="intro" role="button" tabindex="0" aria-label="Open invitation">
+  <video id="introVideo" playsinline muted preload="auto" hidden></video>
+  <div id="envelope" class="envelope">
+    <div class="env-back"></div>
+    <div class="env-card"><span class="script" id="envNames"></span></div>
+    <div class="env-front"></div>
+    <div class="env-flap"></div>
+    <div class="seal">&hearts;</div>
+  </div>
+  <p id="introHint" class="intro-hint"></p>
+</div>
+
+<audio id="bgm" loop></audio>
+<button id="musicBtn" class="music-btn" hidden aria-label="Toggle music">♪</button>
+
+<main id="invite" aria-hidden="true">
+  <section class="hero" id="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-inner">
+      <p class="eyebrow">Together with their families</p>
+      <h1 class="script"><span id="p1"></span><i>&amp;</i><span id="p2"></span></h1>
+      <p class="tagline" id="tagline"></p>
+      <div class="scratch" id="scratch">
+        <span class="scratch-label">Scratch to reveal the date</span>
+        <p class="date" id="dateText"></p>
+        <canvas id="scratchCanvas"></canvas>
+      </div>
+      <div class="countdown" id="countdown" aria-live="off"></div>
+    </div>
+    <a class="scroll" href="#story" aria-label="Scroll">↓</a>
+  </section>
+
+  <section id="story" class="section">
+    <h2>Our Story</h2>
+    <div class="timeline" id="timeline"></div>
+  </section>
+
+  <section id="gallery" class="section alt">
+    <h2>Moments</h2>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <section id="events" class="section">
+    <h2>The Celebration</h2>
+    <div class="cards" id="cards"></div>
+    <div class="plan">
+      <a class="plan-card" id="calBtn" href="#"><b>Save the date</b><small>Add to calendar</small></a>
+      <a class="plan-card" id="venueCard" target="_blank" rel="noopener"><b>Venue &amp; directions</b><small id="venueSmall"></small></a>
+    </div>
+    <div class="venue">
+      <h3 id="venueName"></h3>
+      <p id="venueAddr"></p>
+      <a class="btn" id="mapBtn" target="_blank" rel="noopener">Open in Maps</a>
+    </div>
+  </section>
+
+  <section id="rsvp" class="section alt">
+    <h2>RSVP</h2>
+    <p id="deadline" class="muted"></p>
+    <a class="btn big" id="rsvpBtn" target="_blank" rel="noopener">Will you join us?</a>
+  </section>
+
+  <footer>
+    <p class="script" id="footNames"></p>
+    <p class="muted" id="footNote"></p>
+  </footer>
+</main>
+
+<div id="lightbox" hidden><img alt=""></div>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
