@@ -9,8 +9,8 @@ window.WEDDING = {
   tagline: "are getting married",
 
   // ISO date-time, local time of the venue
-  date: "2026-12-12T17:00:00",
-  dateText: "Saturday, 12 December 2026", // TODO: set your real date
+  date: "2027-01-26T17:00:00",
+  dateText: "Tuesday, 26 January 2027",
 
   // ---- Opening animation -----------------------------------
   // Option A: a video made with Gemini/Veo etc. (put file in assets/intro/)
@@ -40,9 +40,9 @@ window.WEDDING = {
 
   // ---- Events ----------------------------------------------
   events: [
-    { name: "Mehendi",   time: "10 Dec · 4:00 PM", place: "Family Home" },
-    { name: "Ceremony",  time: "12 Dec · 5:00 PM", place: "The Grand Venue" },
-    { name: "Reception", time: "12 Dec · 8:00 PM", place: "The Grand Venue" }
+    { name: "Mehendi",   time: "24 Jan · 4:00 PM", place: "Family Home" },
+    { name: "Ceremony",  time: "26 Jan · 5:00 PM", place: "The Grand Venue" },
+    { name: "Reception", time: "26 Jan · 8:00 PM", place: "The Grand Venue" }
   ],
 
   venue: {
@@ -57,7 +57,7 @@ window.WEDDING = {
     whatsapp: "910000000000",
     email: "",
     formLink: "",
-    deadlineText: "Please reply by 1 December 2026"
+    deadlineText: "Please reply by 10 January 2027"
   },
 
   footerNote: "With love, and hoping to celebrate with you."
